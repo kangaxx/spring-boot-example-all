@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 public interface SchoolDao {
 
     SchoolVo findById(@Param(value = "id") Long id);
+    int addSchoolDao(@Param(value = "name") String name, @Param(value = "desc") String desc);
 }

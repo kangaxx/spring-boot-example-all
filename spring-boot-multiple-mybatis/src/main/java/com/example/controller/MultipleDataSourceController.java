@@ -21,7 +21,7 @@ public class MultipleDataSourceController {
 
     @RequestMapping(value = "/findData")
     public HashMap<String, Object> findMultipleData() {
-        UserVo userVo = userDao.findById(1l);
+        UserVo userVo = userDao.findById(2l);
         SchoolVo schoolVo = schoolDao.findById(1l);
         if (userVo != null) {
             System.out.println(userVo.toString());
